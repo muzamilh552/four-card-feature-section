@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    color: #4d4f62;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.head h1 {
+    font-size: 2.2rem;
+    font-weight: 300;
+
+}
+
+#bold {
+    font-weight: 700;
+}
+
+.head p {
+    font-size: 1rem;
+    padding: 20px 350px;
+
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.supervisar,
+.builder,
+.karma,
+.calculator {
+    margin: 10px;
+    border-radius: 7px;
+    width: 350px;
+    height: 250px;
+    border: 1px solid gray;
+    box-shadow: 5px 10px 50px rgba(78, 78, 78, 0.3);
+    padding: 30px 20px;
+}
+
+.supervisar h1,
+.builder h1,
+.karma h1,
+.calculator h1 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.middle-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.supervisar p,
+.builder p,
+.karma p,
+.calculator p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #888686;
+}
+
+.small-bar {
+    border-radius: 7px;
+    width: 350px;
+    height: 5px;
+    position: relative;
+    right: 21px;
+    bottom: 31px;
+}
+
+.green {
+    background: #149760;
+}
+
+.icon-super {
+    padding: 40px 10px 0 220px;
+
+}
+
+.red {
+    background: #ad3a3a;
+}
+
+.orange {
+    background: rgb(187, 140, 53);
+}
+
+.sea {
+    background: #b3c7bc;
+}
+
+@media (max-width: 1130px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        align-items: center;
+    }
+
+    .supervisar,
+    .builder,
+    .karma,
+    .calculator {
+        margin: 0 auto;
+        border-radius: 7px;
+        width: 350px;
+        height: 250px;
+
+        padding: 30px auto;
+    }
+
+    .middle-cards {
+        flex-direction: row;
+    }
+
+    .head p {
+        font-size: 1.5rem;
+        padding: 20px 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .middle-cards {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .head p {
+        font-size: 14px;
+        padding: 20px 30px;
+    }
+}
